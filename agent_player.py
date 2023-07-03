@@ -12,10 +12,6 @@ from lib.player_base import Player, PlayerShip
 class AgentPlayer(Player):
 
     def __init__(self):
-        # random.seed(seed)
-        # フィールドを2x2の配列として持っている．
-        # self.field = [[i, j] for i in range(Player.FIELD_SIZE)
-        #               for j in range(Player.FIELD_SIZE)]
         initfield = [[i, j] for i in range(Player.FIELD_SIZE)
                       for j in range(Player.FIELD_SIZE)]
         initfield.remove([0,0])
